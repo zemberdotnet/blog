@@ -1,5 +1,29 @@
 {{ template "base" }}
 {{ define "body" }}
-<p>Test Body</p>
+	<p>My name is Matthew Zember and I'm a fouth-year at the University of Virginia. I have a passion for computing, finance, and the outdoors. I'm involved in the 
+	<a href="https://www.vfiatuva.com/">Virginia Finance Institute</a> and the <a href='https://www.gmgatuva.org'>Global Markets Group</a> at UVa. In my spare time, I like reading, 
+	working on various projects, and training for triathalons.</p>
+	<p>I do my best to live purposefully, work hard, and be kind.</p>
+	<p style="display: inline;">If you want to contact me then send an email to </p><p style="display: inline;" onmouseover="hover();" id="hover">Hover For Email</p>
+	<script>
+
+	// Send me an Email!
+	function hover() {
+		let elem = document.getElementById("hover");
+		const x = [41, 0, 3, 6, 40, 23, 1, 24, 44, 31, 6, 0, 2, 40, 15, 74, 41, 1, 1]
+		const pad = "SendMeAnEmailAndLetsConnect";
+		let mail = ""; 
+		for (let i = 0; i < x.length; i++) {
+			chr	= decrypt(x[i], pad.charCodeAt(i));
+			mail += String.fromCharCode(chr);
+		}
+		elem.innerHTML = mail;
+	}
+
+	function decrypt(x, y) {
+		return x ^ y;
+	}
+	</script>
+
 {{ end }}
 

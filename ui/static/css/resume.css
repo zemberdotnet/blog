@@ -1,0 +1,15 @@
+.heading {
+	font-weight: bolder;
+	display: block;
+	text-decoration:underline;
+}
+
+
+.subheading {
+	font-weight: 600;
+	display: inline;
+}
+
+p {
+	margin-top: 0;
+}

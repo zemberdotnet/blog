@@ -4,9 +4,17 @@
 	<head>
 		<meta charset='utf-8'>
 		<title>zemberdotnet</title>
+		<link rel='stylesheet' href='/static/css/main.css'>
 	</head>
 	<body>		
-		{{ template "body" .}}		
+	<div class="layout">
+		<div class="container">
+			{{ template "nav" .}}
+			<div class="content">
+				{{ template "body" .}}		
+			</div>
+		</div>
+	</div>
 	</body>
 </html>
 {{ end }}

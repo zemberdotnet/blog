@@ -3,19 +3,10 @@ package web
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/semihalev/gin-stats"
-	"path/filepath"
 )
 
 func (app *application) routes() *gin.Engine {
 	r := gin.New()
-
-	fp, err := filepath.Abs("./ui/html/")
-	if err != nil {
-		// if we don't find the filepath we aren't going to get very far
-		panic(err)
-	}
-	// Loading templates
-	r.LoadHTMLGlob(filepath.Join(fp, "*.tmpl"))
 
 	// Loading static files
 	r.Static("/static/", "./ui/static/")
@@ -35,4 +26,7 @@ func (app *application) website(r *gin.Engine) {
 	web.Use(app.secureHeaders)
 
 	web.GET("/", app.home)
+	web.GET("/bookshelf", app.bookshelf)
+	web.GET("/resume", app.resume)
+	web.GET("/writing", app.writing)
 }

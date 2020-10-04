@@ -1,0 +1,35 @@
+html, body {
+	font: 1.1em/1.3em sans-serif;
+	margin:0 auto;
+	padding:0;
+	color: #333;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.container {
+	max-width: 45em;
+	margin: auto;
+	position: relative;
+	display:flex;
+}
+
+.nav {
+	margin-top:50px;
+}
+
+.content {
+	margin-top:50px;
+	margin-left: 50px;
+}
+
+li a {
+	text-decoration:none;
+	color: #000;
+}
+
+#hover {
+	display: inline;
+}
