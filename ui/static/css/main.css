@@ -10,7 +10,6 @@ ul {
 }
 
 .container {
-	max-width: 45em;
 	margin: auto;
 	position: relative;
 	display:flex;
@@ -21,6 +20,7 @@ ul {
 }
 
 .content {
+	max-width: 65ch;
 	margin-top:50px;
 	margin-left: 50px;
 }
@@ -32,4 +32,12 @@ li a {
 
 #hover {
 	display: inline;
+}
+
+img {
+	max-width:65ch;
+}
+
+figcaption {
+	font-size: 0.8em;
 }

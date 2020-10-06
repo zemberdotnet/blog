@@ -3,6 +3,7 @@ package web
 import ()
 
 type application struct {
+	templateNames []string
 }
 
 func Entry() {

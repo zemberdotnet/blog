@@ -21,3 +21,9 @@ func (app *application) resume(c *gin.Context) {
 func (app *application) writing(c *gin.Context) {
 	c.HTML(200, "writing.page.tmpl", nil)
 }
+
+func (app *application) essay(c *gin.Context) {
+	c.HTML(200, "curatedaesthetics.page.tmpl", gin.H{
+		"article": true,
+	})
+}

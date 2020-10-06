@@ -1,0 +1,13 @@
+.heading {
+	font-size: 1.4em;
+	font-weight: 700;
+}
+
+.subheading {
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+.content {
+	line-height: 1.5;
+}
